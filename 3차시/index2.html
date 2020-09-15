@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function getSum(){
+        // 1. 아이디가 n, m인 요소의 값을 가져온다.
+        var n = parseInt(document.getElementById("n").value, 10);
+        var m = parseInt(document.getElementById("m").value, 10);
+        // document => 현재 html 파일 전체를 말함. 즉, 여기서는 index2.html 파일을 말함.
+        // getElimentById 로 가져온 정보들 중에서, value 값만 가져온다는 의미로 .value를 씀.
+        // 이렇게 가져온 정보는 문자형으로 반환된다.
+        // => parseInt()는 문자열을 정수형으로 바꿔준다. 두 번째 파라미터에는 몇 진수로 반환할 건지.
+        document.getElementById("sumResult").innerHTML = n + m;
+        // innerHTML : 값을 요소 안에 나타나게 하고 싶을 때 사용한다.
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="n" value=""> <!-- id는 식별자, name은 그냥 이름 -->
+    <input type="text" id="m" value="">
+    <button type="button" name="submit" onclick="getSum()">계산하기</button>
+
+    <p id="sumResult"></p>
+  </body>
+</html>
