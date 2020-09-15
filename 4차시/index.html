@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var obj = {name : "이순신", age : 20};
+      for(var i in obj) {
+        document.write(i + "<br>");
+      }
+
+      var arr = ['3','4','5'];
+      for(var i in arr) {
+        document.write(i + " ");
+      }
+
+      document.write("<br>");
+
+      // #######################################
+      // 아래 두 for문은 같은 동작을 수행함.
+
+      for(var i = 0; i < arr.length; i++){
+        document.write(arr[i] + " ");
+      }
+
+      document.write("<br>");
+      
+      for(var value of arr) {
+        document.write(value + " ");
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

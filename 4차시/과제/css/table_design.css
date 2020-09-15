@@ -1,0 +1,31 @@
+#table {
+  border: 2px solid #000;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.holiday {
+  color: rgb(255,0,0);
+}
+
+.saturday {
+  color: rgb(0,0,255);
+}
+
+.today {
+  background-color: rgb(255,255,0);
+}
+
+.today_holiday {
+  color: rgb(255,0,0);
+  background-color: rgb(255,255,0);
+}
+
+.today_saturday {
+  color: rgb(0,0,255);
+  background-color: rgb(255,255,0);
+}
